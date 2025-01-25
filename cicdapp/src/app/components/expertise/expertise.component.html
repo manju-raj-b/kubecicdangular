@@ -1,1 +1,12 @@
-<p>expertise works!</p>
+<h2>Technology Lists!</h2>
+<hr>
+
+<table border="1">
+    <tr>
+        <td>Technology</td><td>Details</td>
+    </tr>
+    <tr *ngFor="let exp of _techService.techList">
+        <td>{{exp.techName}}</td>
+        <td>{{exp.features}}</td>
+    </tr>
+</table>
